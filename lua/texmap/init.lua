@@ -4,8 +4,6 @@ local motions = require 'texmap.motions'
 local surrounds = require 'texmap.surrounds'
 local textobj = require 'texmap.textobj'
 
-local vim = vim
-
 local M = {}
 
 M.config = {
@@ -30,7 +28,7 @@ local function tbl_merge(tbl1, tbl2)
 end
 
 function M.init(config)
-  imaps.init(config.imaps)
+  imaps.init(config)
   motions.init(config)
   surrounds.init(config)
   textobj.init(config)
